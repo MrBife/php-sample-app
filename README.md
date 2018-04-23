@@ -40,8 +40,7 @@ Uma imagem Docker são blocos de containers em execução. Para executar um cont
 
 
 <div align="center">
-  <img alt="explicacao-docker" src="https://i1.wp.com/blog.docker.com/wp-content/uploads/011f3ef6-d824-4d43-8b2c-36dab8eaaa72-1.jpg?fit=650%2C530&ssl=1
-" style="max-height:300px; width:100; height: auto; max-width:100%; margin-top: 50px; margin-bottom: 20px" />
+  <img alt="explicacao-docker" src="https://i1.wp.com/blog.docker.com/wp-content/uploads/011f3ef6-d824-4d43-8b2c-36dab8eaaa72-2.jpg?w=650&ssl=1" style="max-height:300px; width:100; height: auto; max-width:100%; margin-top: 50px; margin-bottom: 20px" />
 </div>
 
 ##### O que é e o que tem dentro do Dockerfile?
