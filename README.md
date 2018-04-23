@@ -149,6 +149,19 @@ docker exec -ti backend mysql -u root -p
 * **-ti backend mysql** especifica qual projeto e qual tecnologia.
 * **-u root -p** utiliza o padrão de portas para conectar o banco.
 
+#### `Explicando Dockerfile do Back`
+
+
+```bash
+FROM mysql:5.7
+```
+* Esta dizendo qual imagem você escolheu com sua versão respectivamente. A imagem vem do [DockerHub](https://hub.docker.com/), existem diversas imagens prontas... É possível criar sua própria imagem e subir ela para sua necessidade.
+
+```bash
+COPY ./demo.sql /docker-entrypoint-initdb.d/
+```
+* Esta dizendo qual pasta que iremos copiar os arquivos.
+
 ---
 
 ## Conectando Front com o Back
