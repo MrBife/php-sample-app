@@ -5,10 +5,6 @@
 </div>
 
 <div align="center">
-  <img alt="fiap-logo" src="https://png.icons8.com/metro/1600/plus-math.png" style="max-height:20px; width:100; height: auto; max-width:20px; margin-top: 50px; margin-bottom: 20px" />
-</div>
-
-<div align="center">
   <img alt="fiap-logo" src="https://cdn-images-1.medium.com/max/792/1*7a8Qffxkg7WuePBZUebYSw.png" style="max-height:100px; width:100; height: auto; max-width:100%; margin-top: 50px; margin-bottom: 20px" />
 </div>
 
