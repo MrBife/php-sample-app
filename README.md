@@ -108,9 +108,9 @@ docker pull php:7.2-apache
 * Estamos pegando o PHP com Apache.
 
 ```bash
-docker pull mysql:latest
+docker pull mysql:5.1
 ```
-* E agora o MySQL na sua última versão.
+* E agora o MySQL na versão 5.1.
 
 #### `Build da Imagem do MySQL`
 
