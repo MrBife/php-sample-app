@@ -27,7 +27,7 @@ docker -v
 
 ## Front-End
 
-### `Build da Imagem`
+#### `Build da Imagem`
 
 Iremos Buildar uma Imagem:
 ```bash
@@ -71,13 +71,13 @@ COPY . /var/www/html/
 ```
 * Copia todo o conteúdo.
 
-### `Para verificar se a imagem foi realmente criada:`
+#### `Para verificar se a imagem foi realmente criada:`
 ```bash
 docker images
 ```
 Você pode observar detalhes de outras imagens que você já criou utilizando este comando.
 
-### `Executando nosso Container`
+#### `Executando nosso Container`
 
 Para executarmos nosso Container com nossa aplicação:
 ```bash
@@ -89,7 +89,7 @@ docker run -d -p 80:80 --rm --name frontend frontend-php:0.0.1
 * **-p** define a porta utilizada, seguida de porta base para porta destino("x":"x").
 * **--rm --name** nome do container.
 
-### `Verificar se está executando`
+#### `Verificar se está executando`
 
 Utilize um comando CLI do Docker:
 ```bash
@@ -101,7 +101,7 @@ Ele irá mapear todos os containers que estão rodando.
 
 ## Back-End
 
-`Utilizando imagem PHP com Apache e MySQL`
+#### `Utilizando imagem PHP com Apache e MySQL`
 
 Iremos utilizar o terminal e o Docker CLI para pegarmos as imagens do PHP com Apache e MySQL.
 
@@ -117,7 +117,7 @@ docker pull mysql:latest
 ```
 * E agora o MySQL na sua última versão.
 
-`Build da Imagem do MySQL`
+#### `Build da Imagem do MySQL`
 
 ```bash
 docker build -t db:0.0.1
@@ -125,13 +125,13 @@ docker build -t db:0.0.1
 * **-t** significa Tag, portanto conseguimos futuramente identifica-lo melhor.
 * **:0.0.1** é a versão que estamos dando ao projeto.
 
-### `Para verificar se a imagem foi realmente criada:`
+#### `Para verificar se a imagem foi realmente criada:`
 ```bash
 docker images
 ```
 Você pode observar detalhes de outras imagens que você já criou utilizando este comando.
 
-### `Executando nosso Container`
+#### `Executando nosso Container`
 
 Para executarmos nosso Container com nossa aplicação:
 ```bash
@@ -145,7 +145,7 @@ docker run -d -e MYSQL_DATABASE=demo -e MYSQL_ALLOW_EMPTY_PASSWORD=yes --name ba
 * **MYSQL_ALLOW_EMPTY_PASSWORD=yes** permite o uso de senha vazia.
 * **--name** nome do container.
 
-### `Verificando o Container`
+#### `Verificando o Container`
 ```bash
 docker exec -ti backend mysql -u root -p
 ```
@@ -166,10 +166,10 @@ docker run -d -p 80:80 --name frontend --link backend frontend:0.0.1
 * **--link** conecta dois containers, fazendo uma ligação entre os dois.
 ---
 ## O que nós aprendemos?
-* **Manage design systems—** `react-sketchapp` was built for [Airbnb’s design system](http://airbnb.design/building-a-visual-language/); this is the easiest way to manage Sketch assets in a large design system
-* **Use real components for designs—** Implement your designs in code as React components and render them into Sketch
-* **Design with real data—** Designing with data is important but challenging; `react-sketchapp` makes it simple to fetch and incorporate real data into your Sketch files
-* **Build new tools on top of Sketch—** the easiest way to use Sketch as a canvas for custom design tooling
+* **Criamos um Container de um projeto**, entendemos como eles funcionam e como executamos.
+* **Utilizamos imagens para a construção de Containers** utilizando DockerHub, dando asas para criar infinitos projetos com imagens de lá.
+* **Linkamos os projetos de Containers diferentes** e agora tudo faz sentido, tá tudo junto e funcionando em sincronia
+* **Subimos um projeto completo em Docker!** pera... É isso mesmo? Olocoo meu! :D
 
 Sério que você curtiu? Que foda! ^^
 
